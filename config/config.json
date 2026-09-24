@@ -1,0 +1,6 @@
+{
+  "app_name": "AI Foundation Lab",
+  "default_username": "Learner",
+  "debug": true,
+  "database": "data/learning.db"
+}

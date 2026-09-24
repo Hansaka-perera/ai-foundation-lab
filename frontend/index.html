@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Foundation Lab</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand"><span class="brand-dot"></span><span>AI FOUNDATION LAB</span></div>
+    <div class="top-meta">
+      <span id="xp-chip" class="chip">XP 0</span>
+      <span id="level-chip" class="chip">LEVEL 1</span>
+      <button id="theme-btn" class="icon-btn" aria-label="Toggle theme">☼</button>
+    </div>
+  </header>
+
+  <div class="main-grid">
+    <aside class="sidebar">
+      <div class="side-label">LAB NAVIGATION</div>
+      <button class="nav-item active" data-view="dashboard"><span>⌘</span> Dashboard</button>
+      <button class="nav-item" data-view="parameters"><span>θ</span> Parameters</button>
+      <button class="nav-item" data-view="binary"><span>01</span> Binary</button>
+      <button class="nav-item" data-view="translator"><span>↔</span> Translator</button>
+      <div class="side-label spacer">FOUNDATION PATH</div>
+      <button class="nav-item locked" title="Complete the first three modules first"><span>∧∨</span> Logic <em>LOCKED</em></button>
+      <button class="nav-item locked"><span>v</span> Vectors <em>LOCKED</em></button>
+      <button class="nav-item locked"><span>▦</span> Matrices <em>LOCKED</em></button>
+      <button class="nav-item locked"><span>π</span> Probability <em>LOCKED</em></button>
+      <button class="nav-item locked"><span>AI</span> AI Parameters <em>LOCKED</em></button>
+      <button class="nav-item locked"><span>∇</span> Gradient Descent <em>LOCKED</em></button>
+      <button class="nav-item locked"><span>◉</span> Neural Nets <em>LOCKED</em></button>
+      <div class="side-footer">
+        <div class="mini-line"><span>main</span><span>●</span></div>
+        <div class="mini-line"><span>lesson/parameters</span><span>✓</span></div>
+        <div class="mini-line"><span>lesson/binary</span><span>✓</span></div>
+      </div>
+    </aside>
+
+    <main id="content" class="content"></main>
+  </div>
+
+  <footer class="statusbar">
+    <div>module: <span id="status-module">dashboard</span></div>
+    <div>status: <span class="status-green">learning</span></div>
+    <div id="streak-status">streak: 0</div>
+    <div class="status-spacer"></div>
+    <div>v0.1 · local lab</div>
+  </footer>
+</div>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
